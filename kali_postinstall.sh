@@ -229,7 +229,11 @@ wget -c https://github.com/danielmiessler/SecLists/archive/master.zip -O SecList
   && unzip SecList.zip \
   && rm -f SecList.zip
 
-
+#########################################
+## Install & enable gdb-peda
+cd /tmp
+git clone https://github.com/longld/peda.git ~/peda
+echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 ##########################################
 # Sources 
